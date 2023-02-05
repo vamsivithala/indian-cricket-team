@@ -7,7 +7,7 @@ export default function Home(){
     <title>indian cricket team</title>
 
   </Head>
-  bvfbvbvdd
+  <h6>Welcome to Home page</h6>
   
   </>
 }
