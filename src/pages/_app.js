@@ -1,26 +1,40 @@
-import '@/styles/globals.css'
+import '@/styles/_app.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import Link from 'next/link'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 export default function App({ Component, pageProps }) {
   return <>
-  <main>
-    <article>
-      <header className="d-flex justify-content-between border-bottom align-items-center">
-        <h4  className="px-2">Indian Cricket Team</h4>
-        <nav>
-          <ul className="list-group list-group-horizontal list-unstyled">
-            <li className="px-2">Home</li>
-            <li className="px-2">Players</li>
-            <li className="px-2">Stats</li>
-          </ul>
-        </nav>
-      </header>
-      <section className="p-2">
-      <Component {...pageProps} />
-      
-      </section>
-    </article>
-  </main>
+    <main>
+      <article>
+       
+
+        <header className="d-flex justify-content-between align-items-center">
+          <b><h4 className="px-2">INDIAN CRICKET TEAM</h4></b>
+          <img src='./images/llogo.jpg'/>
+          <Navbar collapseOnSelect expand="md" className="animate-navbar nav-theme justify-content-between">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav"/>
+            <Container>
+              <Navbar.Brand href="home"></Navbar.Brand>
+              <Nav>
+                <b><Nav.Link style={{color:"orange"}}href="home">HOME</Nav.Link></b>
+                <b><Nav.Link style={{color:"orange"}}href="matches">MATCHES</Nav.Link></b>
+                <b><Nav.Link style={{color:"orange"}}href="players">PLAYERS</Nav.Link></b> 
+                <b><Nav.Link style={{color:"orange"}}href="stats">STATS</Nav.Link></b>
+              </Nav>
+            </Container>
+          </Navbar>
+
+        </header>
+        <section className="p-2">
+          <Component {...pageProps} />
+        </section>
+      </article>
+    </main>
   </>
 }
