@@ -1,6 +1,7 @@
-export default function Home(){
+import Caro from "./caro";
+export default function Home() {
     return <>
-    <h6>welcome to home page</h6>
-    
+        <Caro />
+        <h1>This is news page</h1>
     </>
 }

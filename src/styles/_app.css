@@ -1,24 +1,42 @@
-header:first-of-type{
-    display: flex;
-    height: 20px;
-    align-items: center;
-    font-family:'Times New Roman', Times, serif;
-    background-color:white;
-}
-
-header:last-of-type {
+header {
     height: 70px;
-    background:linear-gradient(92.04deg, #18184A 24.18%, #19398A 50.95%, #18184A 110.32%);
-    align-items: center;
-    box-shadow: 0 4px 8px 0 hsl(0deg 0% 7% / 50%);
-    color: rgb(255, 255, 255);
+
     padding: 10px;
-    font-family:'Source Sans Pro', sans-serif;
+    display: flex;
+    background: linear-gradient(92.04deg, #18184A 24.18%, #19398A 50.95%, #18184A 110.32%);
+
+    justify-content: center;
+    align-items: center;
+
+
+
 }
-h4{
-    font-family: 'Source Sans Pro', sans-serif;
+
+
+.header-button {
+    font-family: 'Source SansPro', sans-serif;
+    background-color: rgba(255, 255, 255, 0.342);
+    font-weight: bold;
+    font-size: 90%;
+
+
 }
 
 
 
-   
+.active-pink-2 input[type="text"]:focus:not([readonly]) {
+    border-bottom: 1px solid #18184A;
+    box-shadow: 0 1px 0 0 #18184A;
+    vertical-align: middle;
+    background-color: #18184A;
+}
+
+.navbar {
+    margin-top: 15px;
+}
+
+.navbar button:hover {
+    background-color: black;
+    color: black;
+    transition: all 0.3s ease;
+}
