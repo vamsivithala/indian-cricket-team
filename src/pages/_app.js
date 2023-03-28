@@ -14,7 +14,7 @@ export default function Home({ Component, pageProps }) {
 
         <header className="display-flex justify-content-between">
 
-          <Image src='/logo1.png' width="200" height="60" className="px-2" />
+          <Image src='/logo1.png' alt="logo1" width="200" height="60" className="px-2" />
           <Navbar>
             <Navbar.Brand href="home"></Navbar.Brand>
             <Nav>
